@@ -41,7 +41,6 @@ with open(output_file_name, 'w') as absfile:
             # Convert to binary
             geomwkb = geom_wkt.wkb_hex
         # Construct the output: mod_ref has been replaced 
-        #line = '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s' % (geomwkb, f['mesh_block'], f['sa1'], f['sa2'], f['sa3'], f['sa4'], f['absversion'], f['add_ref'], f['mod_ref'], f['effstartdt'].toString("yyyy-MM-dd"), f['delta_ind'], f['batch_id'])
         line = '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s' % (geomwkb, f['MB_CODE21'], f['MB_CAT21'], f['CHG_FLAG21'], f['CHG_LBL21'], f['SA1_CODE21'], f['SA2_CODE21'], f['SA2_NAME21'], f['SA3_CODE21'], f['SA3_NAME21'], f['SA4_CODE21'], f['SA4_NAME21'])
         absfile.write(line+'\n')
         
