@@ -40,7 +40,7 @@ with open(output_file_name, 'w') as absfile:
             geos.lgeos.GEOSSetSRID(geom_wkt._geom, set_SRID)
             # Convert to binary
             geomwkb = geom_wkt.wkb_hex
-        # Construct the output: mod_ref has been replaced 
+        # Construct the output
         line = '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s' % (geomwkb, f['MB_CODE21'], f['MB_CAT21'], f['CHG_FLAG21'], f['CHG_LBL21'], f['SA1_CODE21'], f['SA2_CODE21'], f['SA2_NAME21'], f['SA3_CODE21'], f['SA3_NAME21'], f['SA4_CODE21'], f['SA4_NAME21'])
         absfile.write(line+'\n')
         
