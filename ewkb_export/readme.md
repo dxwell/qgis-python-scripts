@@ -11,7 +11,7 @@ Use this script to create a CSV for COPY into Redshift or PostgreSQL.
 # Polygon geometries are exported as EWKB
 
 # Set the output file
-output_file_name = '/users/davidcrosswell/abs_output.csv'
+output_file_name = '/path_to_file/abs_output.csv'
 # Set the SRID - 4283 is GDA94, 7844 is GDA2020
 set_SRID = 4283
 
